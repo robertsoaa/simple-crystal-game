@@ -4,23 +4,77 @@
     <!-- Required meta tags -->
 
     
-    <title>simple crystal game</title>
+    <title>GOT - Simple Crystal Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <audio autoplay loop>
-        <source src="../../week4/Word-Guess-Game/assets/music/Snooglebum - Last Train Home.mp3" type="audio/mp3">
-    </audio>
+   
 
 </head>
 <body>
     <td class="style1" align='center' height='35'>
         <div id="backgroundimagediv">
-                <div id="crystals">
-                        <!-- Here we added in a single crystal image -->
-                        <img class="crystal-image" src="assets/images/hoppingrabbit.gif" alt="The Running Rabbit">
+                <img class="winterComingTitle" src="assets/images/WinterIsComing.png" alt="Winter is Coming">
+                <img class="collectCrystalsTitle" src="assets/images/capturethecrystals.png" alt="Collect the Crystals">
+
+                <div id="wwEyeDiv">
+                    <img class="wweye" src="assets/images/wweye.png" alt="wweye">                      
+                </div>
+                <div id="scorelabel">SCORE</div>
+                <div id="scoretracker">0</div>
+                <div id="flyingDragondiv" onclick="flyingDragon()">
+                        <!-- Here we added in a dragon image and fireball-->
+                        
+                        <img class="dragon-image" src="assets/images/hoppingrabbit.gif" alt="The Flying Dragon">
+                            
+                </div>
+                <img id="flame-image1" src="assets/images/flames-1.gif" alt="Flames" height="90px" width="400px">
+                <img id="flame-image2" src="assets/images/flames-1.gif" alt="Flames" height="90px" width="200px">
+                <img id="flame-image3" src="assets/images/flames-1.gif" alt="Flames" height="90px" width="400px">
+                
+                <img id="burningfire1" src="assets/images/burningfire.gif" alt="Burning Flames">
+                <img id="burningfire2" src="assets/images/burningfire.gif" alt="Burning Flames">
+                <img id="burningfire3" src="assets/images/burningfire.gif" alt="Burning Flames">
+                <img id="burningfire4" src="assets/images/burningfire.gif" alt="Burning Flames">
+
+                <div id="icedragondiv">
+                    <img class="icedragonimg" src="assets/images/icedragon.gif" alt="Ice Wall" height="240px" width="120px">
+                </div>
+                <div id="icewalldiv">
+                    <img class="icewall" src="assets/images/icewall.png" alt="Ice Wall" height="240px" width="120px">
+                </div>
+                
+                <div id="walker-image1"><img id="walker-image1" src="assets/images/pvw_walk.gif" alt="A White Walker" height="80px" width="80px">
+                </div>
+                <div id="walker-image2">
+                <img id="walker-image2" src="assets/images/pvw_walk.gif" alt="A White Walker" height="80px" width="80px">
+                </div>
+
+                <div id="walker-image3">
+                <img id="walker-image3" src="assets/images/pvw_walk.gif" alt="A White Walker" height="80px" width="80px">
+                </div>
+                <div id="walker-image4">
+                <img id="walker-image4" src="assets/images/pvw_walk.gif" alt="A White Walker" height="80px" width="80px">
+                </div>
+                <img class="dragonflame" src="assets/images/dragonflame.png" alt="Flames" height="100px" width="130px">
+                
+                    <div id="crystal1div">
+                    <img class="crystal1img" src="assets/images/crystal1.gif" alt="Crystal One">
                     </div>
-            help</div>
-      </td>
+                    <div id="crystal2div">
+                    <img class="crystal2img" src="assets/images/crystal2.gif" alt="Crystal Two">
+                    </div>
+                    <div id="crystal3div">
+                    <img class="crystal3img" src="assets/images/crystal3.gif" alt="Crystal Three">
+                    </div>
+                    <div id="crystal4div">
+                    <img class="crystal4img" src="assets/images/crystal4.gif" alt="Crystal Four">
+                    </div>
+                    <div id="numberToGuessdiv">
+                    <span id="numberToGuessid"></span>
+                    </div>
+                    
+        </div>          
+    </td>
 
       
 
@@ -30,18 +84,15 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<!-- Below is where our JavaScript code will go -->
-<script type="text/javascript">
 
-// Here we created an on-click event that responds to button clicks of the crystal image.
-  $(".crystal-image").on("click", function() {
-
-// Clicking the button triggers an alert message.
-    alert("You clicked a crystal!");
-
-});
-
-</script>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+    <audio autoplay loop>
+        <source src="../simple-crystal-game/assets/music/got.mp3" type="audio/mp3">
+    </audio>
+    <audio id="dragonScreech" loop>
+        <source src="../simple-crystal-game/assets/music/dragonScreech.wav" type="audio/mp3">
+    </audio>
+  
+
 </html>

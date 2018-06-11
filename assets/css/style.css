@@ -6,16 +6,262 @@ body {
     color: aliceblue;
     background-image: url("../images/black_scales.png");
 }
-.crystal-image {
-    width: 100px;
-    height: 100px;
-  }
 #backgroundimagediv{
     position: relative;
-    top: 50px;
+    top: 10px;
     margin: auto;
     height: 540px;
     width: 800px;
     border-style: inset;
     border-width: 5px;
+    z-index: 1;
 }
+#titletext {
+    color: aliceblue;
+    font-size: 24px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.winterComingTitle{
+    
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.collectCrystalsTitle {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icewall {
+    position: absolute;
+    top: 290px;
+    left: 45px;
+}
+.dragon-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    top: 50px;
+    left: 5px;
+  }
+#flyingDragondiv {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;  
+}
+#icedragondiv{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 700px;
+    visibility: hidden;
+}
+
+.crystal1img {
+    
+    height: 55px;
+    width: 55px;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crystal2img {
+    height: 65px;
+    width: 65px;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.crystal3img {
+    height: 65px;
+    width: 65px;
+    z-index: 1;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.crystal4img {
+    height: 65px;
+    width: 65px;
+    z-index: 1;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#numberToGuessid {
+    position: absolute;
+    padding: 20px;
+    width: 90px;
+    left: 345px;
+    top: 190px;
+    font-size: 32px;
+    color: silver;
+}
+
+#scorelabel{
+    position: relative;
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    height: 20px;
+    width: 70px;
+    left: -80px;
+    top: -280px;
+}
+#scoretracker{
+    position: relative;
+    background-color: black;
+    color: green;
+    font-size: 38px;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -80px;
+    top: -270px;
+}
+
+#crystal1div {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -80px;
+    top: -260px;
+}
+#crystal2div {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -80px;
+    top: -255px;
+}
+#crystal3div {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -80px;
+    top: -250px;
+}
+#crystal4div {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -80px;
+    top: -245px;
+}
+
+#walker-image1 {
+    position: absolute;
+}
+#walker-image2 {
+    position: absolute;
+}
+#walker-image3 {
+    position: absolute;
+}
+#walker-image4 {
+    position: absolute;
+}
+
+.wweye {
+    padding: 0;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 120px;
+}
+
+#flame-image1 {
+    position: absolute;
+    left: 220px;
+    top: 370px;
+    z-index: 2;
+    visibility: hidden;
+}
+#flame-image2 {
+    position: absolute;
+    left: 190px;
+    top: 350px;
+    z-index: 2;
+    visibility: hidden;
+}
+#flame-image3 {
+    position: absolute;
+    left: 250px;
+    top: 400px;
+    z-index: 2;
+    visibility: hidden;
+}
+.dragonflame {
+    position: absolute;
+    left: 160px;
+    top: 250px;
+    z-index: 1;
+    visibility: hidden;
+}
+#burningfire1 {
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    height: 100px;
+    width: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+#burningfire2 {
+    position: absolute;
+    left: 100px;
+    top: 350px;
+    height: 100px;
+    width: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+#burningfire3 {
+    position: absolute;
+    left: 120px;
+    top: 270px;
+    height: 100px;
+    width: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+#burningfire4 {
+    position: absolute;
+    left: 140px;
+    top: 200px;
+    height: 100px;
+    width: 50px;
+    z-index: 1;
+    visibility: hidden;
+}
+
