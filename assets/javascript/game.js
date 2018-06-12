@@ -1,10 +1,10 @@
 //JavaScript Document
 document.getElementById("backgroundimagediv").style.backgroundImage = "url('assets/images/winterbackground.gif')";
-
 //sets the initial state of the game, initial score and the global counter.
-var scoretracker = 5;
+var scoretracker = 0;
 var counter = 0;
 var ic = document.getElementById("scoretracker")
+  console.log(scoretracker);
   ic.innerHTML = counter + scoretracker
 
 // Here we establish a random "targetNumber" using the math,round.
@@ -33,7 +33,10 @@ $(".crystal1img").on("click", function() {
     if (counter === targetNumber) {
 
       // If the numbers match we'll celebrate the user's win.
-      alert("You win!");
+      //alert("You win!");
+      var win = document.getElementById("numberToGuessid")
+      win.innerHTML = "You win this round";
+      flyingDragon()
     }
     // Here we added an "else if" condition. If the user's counter ever exceeds the targetNumber...
     else if (counter >= targetNumber) {
@@ -268,7 +271,7 @@ function randomizeCrystalValue() {
 // We begin by expanding our array to include four options.
 // Here we created code that selects a number either 10, 5, 3, 7.
 // We'll set this number at the start of the "game".
-var numberOptions = [10, 5, 3, 7];
+var numberOptions = [10, 6, 5, 3, 7, 20, 4, 8, 9];
 for (var i = 0; i < numberOptions.length; i++) {
 var increment = numberOptions[Math.round(Math.random())];
 console.log(increment);
