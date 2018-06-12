@@ -108,8 +108,9 @@ body {
     width: 90px;
     left: 345px;
     top: 190px;
-    font-size: 32px;
-    color: silver;
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
 }
 
 #scorelabel{
@@ -119,7 +120,7 @@ body {
     text-align: center;
     height: 20px;
     width: 70px;
-    left: -80px;
+    left: -85px;
     top: -280px;
 }
 #scoretracker{
@@ -132,7 +133,7 @@ body {
     width: 70px;
     border-style: inset;
     border-width: 4px;
-    left: -80px;
+    left: -90px;
     top: -270px;
 }
 
@@ -143,7 +144,7 @@ body {
     width: 70px;
     border-style: inset;
     border-width: 4px;
-    left: -80px;
+    left: -90px;
     top: -260px;
 }
 #crystal2div {
@@ -153,7 +154,7 @@ body {
     width: 70px;
     border-style: inset;
     border-width: 4px;
-    left: -80px;
+    left: -90px;
     top: -255px;
 }
 #crystal3div {
@@ -163,7 +164,7 @@ body {
     width: 70px;
     border-style: inset;
     border-width: 4px;
-    left: -80px;
+    left: -90px;
     top: -250px;
 }
 #crystal4div {
@@ -173,7 +174,7 @@ body {
     width: 70px;
     border-style: inset;
     border-width: 4px;
-    left: -80px;
+    left: -90px;
     top: -245px;
 }
 
