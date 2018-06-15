@@ -153,7 +153,8 @@ function movingWw1() {
     if (pos == 105) {
       pos = 710;
       console.log (scoretracker);
-      scoretracker = scoretracker - 1
+      scoretracker = scoretracker - 1;
+      counter = counter - 1;
       console.log (scoretracker);
       var sc = document.getElementById("scoretracker");
       sc.innerHTML = scoretracker + counter;
@@ -175,7 +176,8 @@ function movingWw2() {
     if (pos == 105) {
       pos = 710;
       console.log (scoretracker);
-      scoretracker = scoretracker - 1
+      scoretracker = scoretracker - 1;
+      counter = counter - 1;
       console.log (scoretracker);
       var sc = document.getElementById("scoretracker");
       sc.innerHTML = scoretracker + counter;
@@ -197,7 +199,8 @@ function movingWw3() {
     if (pos == 105) {
       pos = 710;
       console.log (scoretracker);
-      scoretracker = scoretracker - 1
+      scoretracker = scoretracker - 1;
+      counter = counter - 1
       console.log (scoretracker);
       var sc = document.getElementById("scoretracker");
       sc.innerHTML = scoretracker + counter;
@@ -219,7 +222,8 @@ function movingWw4() {
     if (pos == 105) {
       pos = 710;
       console.log (scoretracker);
-      scoretracker = scoretracker - 1
+      scoretracker = scoretracker - 1;
+      counter = counter - 1;
       console.log (scoretracker);
       var sc = document.getElementById("scoretracker");
       sc.innerHTML = scoretracker + counter;
