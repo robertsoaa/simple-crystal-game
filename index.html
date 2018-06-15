@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <audio autoplay loop>
-        <source src="../simple-crystal-game/assets/music/got.mp3" type="audio/mp3">
-    </audio>
+   
     
     <title>GOT - Simple Crystal Game</title>
     
@@ -15,7 +13,10 @@
 <body>
     <td class="style1" align='center' height='35'>
         <div id="backgroundimagediv">
-                <img class="winterComingTitle" src="assets/images/WinterIsComing.png" alt="Winter is Coming">
+                
+                
+                
+            <img class="winterComingTitle" src="assets/images/WinterIsComing.png" alt="Winter is Coming">
                 <img class="collectCrystalsTitle" src="assets/images/capturethecrystals.png" alt="Collect the Crystals">
 
                 <div id="wwEyeDiv">
@@ -23,8 +24,8 @@
                 </div>
                 <div id="scorelabel">SCORE</div>
                 <div id="scoretracker">0</div>
-                <div id="flyingDragondiv" onclick="flyingDragon()">
-                        <!-- Here we added in a dragon image and fireball-->
+                <div id="flyingDragondiv">
+                        <!-- Here we added in a dragon image and fireball onclick="flyingDragon()"-->
                         
                         <img class="dragon-image" src="assets/images/hoppingrabbit.gif" alt="The Flying Dragon">
                             
@@ -71,6 +72,13 @@
                     <div id="crystal4div">
                     <img class="crystal4img" src="assets/images/crystal4.gif" alt="Crystal Four">
                     </div>
+                    <div id="buttondiv">
+                        <button id="startButton">START</button>
+                        </div>
+                        <div id="startScreen">
+                            <p id="startScreenText">The goal of the "Winter is Coming" Game is to collect enough of the different dragon glass crystal to equal Night King's psyche (the random number generated in the Night King's eye). Each dragon glass crystal has a different value selected randomly by the computer at the beginning of the game (the dragon glass was mined in different parts of Westoros). Clicking on each crystal will increase the players score by the value of that particular dragon glass crystal. The White Walkers are also attacking the ice wall which Westoros built to defend itself from the White Wakers. Every attack on the wall decreases the value of the players score. The player must take this into account when collecting the crystals (it's all magic). Collect too many crystals and the Night King's magic will overcome the wall and Westoros. <br><br>Crystal Values (top to bottom): #1: (10, 20, or 30) #2: (1, 2, 3, 4, or 5) #3 (almost always 1, but sometimes 100) #4 (5 or 10, ...but possibly 20)
+                            </p>
+                        </div>
                     <div id="numberToGuessdiv">
                     <span id="numberToGuessid"></span>
                     </div>
@@ -89,10 +97,6 @@
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
-    
-    <audio id="dragonScreech" loop>
-        <source src="../simple-crystal-game/assets/music/dragonScreech.wav" type="audio/mp3">
-    </audio>
   
 
 </html>

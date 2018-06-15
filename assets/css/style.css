@@ -6,6 +6,31 @@ body {
     color: aliceblue;
     background-image: url("../images/black_scales.png");
 }
+#startButton {
+    height: 70px;
+    width: 70px;
+    padding: 0%;
+    background-color: green;
+    margin: auto;
+    font-weight: bold;
+}
+#startScreen {
+    background-color: black;
+    color: green;
+    font-family: cursive;
+    font-size: 22px;
+    position: relative;
+    height: 520px;
+    width: 780px;
+    border-style: outset;
+    border-width: 10px;
+    left: 0px;
+    top: -775px;
+    z-index: 1;
+}
+#startScreenText {
+    padding: 10px;
+}
 #backgroundimagediv{
     position: relative;
     top: 10px;
@@ -115,18 +140,18 @@ body {
 
 #scorelabel{
     position: relative;
-    color: green;
-    font-size: 18px;
+    color: whitesmoke;
+    font-size: 22px;
     text-align: center;
     height: 20px;
     width: 70px;
-    left: -85px;
+    left: -89px;
     top: -280px;
 }
 #scoretracker{
     position: relative;
     background-color: black;
-    color: green;
+    color: yellow;
     font-size: 38px;
     text-align: center;
     height: 70px;
@@ -176,6 +201,16 @@ body {
     border-width: 4px;
     left: -90px;
     top: -245px;
+}
+#buttondiv {
+    background-color: black;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-style: inset;
+    border-width: 4px;
+    left: -90px;
+    top: -240px;
 }
 
 #walker-image1 {
